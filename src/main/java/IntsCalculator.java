@@ -6,8 +6,8 @@ public class IntsCalculator implements Ints {
     }
 
     @Override
-    public Double sum(int arg0, int arg1) {
-        return this.target.newFormula()
+    public int sum(int arg0, int arg1) {
+        return (int) this.target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
                 .calculate(Calculator.Operation.SUM)
@@ -15,8 +15,8 @@ public class IntsCalculator implements Ints {
     }
 
     @Override
-    public Double mult(int arg0, int arg1) {
-        return this.target.newFormula()
+    public int mult(int arg0, int arg1) {
+        return (int) this.target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
                 .calculate(Calculator.Operation.MULT)
@@ -24,8 +24,8 @@ public class IntsCalculator implements Ints {
     }
 
     @Override
-    public Double pow(double a, double b) {
-        return this.target.newFormula()
+    public int pow(double a, double b) {
+        return (int) this.target.newFormula()
                 .addOperand(a)
                 .addOperand(b)
                 .calculate(Calculator.Operation.POW)

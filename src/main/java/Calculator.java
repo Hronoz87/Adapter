@@ -46,7 +46,7 @@ public class Calculator {
             return this;
         }
 
-        public Double result() {
+        public double result() {
             if (result == null)
                 throw new IllegalStateException("Formula is not computed!");
             return result;
